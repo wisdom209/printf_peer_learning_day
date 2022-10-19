@@ -44,7 +44,7 @@ int print_Rot13(int *i, va_list ptr, const char *format, int *count)
 
 			j++;
 		}
-		
+
 		j++;
 	}
 

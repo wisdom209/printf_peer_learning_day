@@ -25,8 +25,7 @@ int convert_decimal(unsigned long int num, int base, int flag,
 		_putchar('x');
 		*count = *count + 2;
 
-		do
-		{
+		do {
 			buffer[i] = lowerValues[num % base];
 			num = num / base;
 			i++;
@@ -34,8 +33,7 @@ int convert_decimal(unsigned long int num, int base, int flag,
 	}
 	else
 	{
-		do
-		{
+		do {
 			if (flag == 1)
 				buffer[i] = upperValues[a % base];
 			else
