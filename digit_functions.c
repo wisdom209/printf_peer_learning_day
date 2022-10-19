@@ -1,14 +1,28 @@
 #include "main.h"
 
 /**
- * _putchar - putchar
- * @c: c
- *
+ * print_digits - print digits
+ * @i: i
+ * @ptr: ptr
+ * @format: format
+ * @count: count
  * Return: int
  */
-int _putchar(char c)
+int print_digits(int *i, va_list ptr, const char *format, int *count)
 {
-	return (write(1, &c, 1));
+	if (format[*i + 1] == 'd' || format[*i + 1] == 'i')
+	{
+		int num = va_arg(ptr, int);
+
+		if (num <= INT_MAX && num >= INT_MIN)
+		{
+			print_num(num, count);
+			*i = *i + 1;
+		}
+		else
+			return (-1);
+	}
+	return (0);
 }
 
 /**
@@ -56,14 +70,14 @@ int print_binary(int *i, va_list ptr, const char *format, int *count)
 	return (0);
 }
 /**
- * print_hex_upper - print_hex_upper
+ * print_hex - print_hex
  * @i: i
  * @ptr: ptr
  * @format: format
  * @count: count
  * Return: int
  */
-int print_hex_upper(int *i, va_list ptr, const char *format, int *count)
+int print_hex(int *i, va_list ptr, const char *format, int *count)
 {
 	if (format[*i + 1] == 'X')
 	{
@@ -73,18 +87,7 @@ int print_hex_upper(int *i, va_list ptr, const char *format, int *count)
 
 		*i = *i + 1;
 	}
-	return (0);
-}
-/**
- * print_hex_lower - print_hex_lower
- * @i: i
- * @ptr: ptr
- * @format: format
- * @count: count
- * Return: int
- */
-int print_hex_lower(int *i, va_list ptr, const char *format, int *count)
-{
+
 	if (format[*i + 1] == 'x')
 	{
 		int num = va_arg(ptr, int);
@@ -96,4 +99,23 @@ int print_hex_lower(int *i, va_list ptr, const char *format, int *count)
 	return (0);
 }
 
+/**
+ * print_octal - print_octal
+ * @i: i
+ * @ptr: ptr
+ * @format: format
+ * @count: count
+ * Return: int
+ */
+int print_octal(int *i, va_list ptr, const char *format, int *count)
+{
+	if (format[*i + 1] == 'o')
+	{
+		unsigned int num = va_arg(ptr, unsigned int);
 
+		convert_decimal(num, 8, 0, count, 0);
+
+		*i = *i + 1;
+	}
+	return (0);
+}
