@@ -118,7 +118,7 @@ va_arg (man 3 va_arg)
 
 ```%X``` - prints a hexadecimal with uppercase alphabets
 
-```%S``` - prints non printable characters in as /x followed by the hexadecimal ascii value
+```%S``` - prints non printable characters in a string as /x followed by the hexadecimal ASCII value
 
 ```%r``` - prints a string in reverse
 
