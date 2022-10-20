@@ -19,7 +19,7 @@ int print_Rot13(int *i, va_list ptr, const char *format, int *count)
 		int j = 0, k = 0;
 
 		if (s == NULL)
-			return (-1);
+			s = "(null)";
 
 		while (s[j] != '\0')
 		{
@@ -67,7 +67,7 @@ int print_string(int *i, va_list ptr, const char *format, int *count)
 		int j = 0;
 
 		if (s == NULL)
-			return (-1);
+			s = "(null)";
 
 		while (s[j] != '\0')
 		{
@@ -97,7 +97,7 @@ int print_rev(int *i, va_list ptr, const char *format, int *count)
 		int j = 0, k = 0;
 
 		if (s == NULL)
-			return (-1);
+			s = "(null)";
 
 		while (s[k] != '\0')
 			k++;
@@ -129,7 +129,7 @@ int print_non_printable(int *i, va_list ptr, const char *format, int *count)
 		int j = 0;
 
 		if (s == NULL)
-			return (-1);
+			s = "(null)";
 
 		while (s[j] != '\0')
 		{
