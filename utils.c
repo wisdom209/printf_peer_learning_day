@@ -60,8 +60,7 @@ int convert_decimal(unsigned long int num, int base, int flag,
 		_putchar(buffer[j]);
 		*count = *count + 1;
 	}
-	if (flag)
-		return (1);
+	
 	return (0);
 }
 
