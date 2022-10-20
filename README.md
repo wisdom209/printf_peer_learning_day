@@ -4,9 +4,8 @@
 
 A project to make our own printf function, as a fufillment of part of the requirements of the Full Stack Software Engineering programme, offered by African Leadership Xcellerator (ALX), an arm of the African Leadership Group (ALG) which recently acquired the Holberton School of coding.
 
-This project mimics the printf function from the C standard library. 
+This project mimics the printf function from the C standard library and was done as learning follow up following the end of the group project.
 
-For a detailed information on the functionaity, read the manual; **man_3_printf** provided in this repository.
 ## Usage
 It is important to note that you will need your main files to use this project
 
