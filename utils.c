@@ -15,13 +15,13 @@ int _putchar(char c)
  * convert_decimal - converts to given base
  * @num: num to convert
  * @base: base to convert to
- * @flag: upper or lower
+ * @flag_uppercasehex: uppercase or lowercase hex values
  * @count: length of string
  * @isPtr: ptr
  *
  * Return: int
  */
-int convert_decimal(unsigned long int num, int base, int flag,
+int convert_decimal(unsigned long int num, int base, int flag_uppercasehex,
 					int *count, int isPtr)
 {
 	char upperValues[] = "0123456789ABCDEF";
@@ -45,7 +45,7 @@ int convert_decimal(unsigned long int num, int base, int flag,
 	else
 	{
 		do {
-			if (flag == 1)
+			if (flag_uppercasehex == 1)
 				buffer[i] = upperValues[a % base];
 			else
 				buffer[i] = lowerValues[a % base];

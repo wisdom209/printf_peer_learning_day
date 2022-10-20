@@ -23,6 +23,6 @@ int print_hex(int *i, va_list ptr, const char *format, int *count);
 int print_ptr(int *i, va_list ptr, const char *format, int *count);
 int print_num(long num, int *count);
 int print_percent(int *i, const char *format, int *count);
-int convert_decimal(unsigned long int num, int base, int flag,
+int convert_decimal(unsigned long int num, int base, int flag_uppercase_hex,
 					int *count, int isPtr);
 #endif
