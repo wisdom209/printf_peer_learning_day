@@ -99,18 +99,31 @@ va_arg (man 3 va_arg)
 
 ## Format Specifiers Currently working for this project
 ```%s``` - prints a string
+
 ```%c``` - prints a character
+
 ```%i``` - prints an integer
-```%d``` - prints a digit
+
+```%d``` - prints a 
+
 ```%u``` - prints an unsigned integer
+
 ```%p``` - prints a memory address
+
 ```%b``` - prints a binary conversion
+
 ```%o``` - prints an octal conversion
+
 ```%x``` - prints hexadecimal with lowercase alphabets
+
 ```%X``` - prints a hexadecimal with uppercase alphabets
+
 ```%S``` - prints non printable characters in as /x followed by the hexadecimal ascii value
+
 ```%r``` - prints a string in reverse
+
 ```%R``` - prints the ROT13 encryption of a string
+
 
 ## Compilation
 Your code will be compiled this way:
