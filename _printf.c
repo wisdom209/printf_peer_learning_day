@@ -2,7 +2,7 @@
 
 /**
  * _printf - printf
- * @format: fomat
+ * @format: String to be formatted
  *
  * Return: int
  */
