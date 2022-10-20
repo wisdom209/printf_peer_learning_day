@@ -105,7 +105,7 @@ va_arg (man 3 va_arg)
 
 ```%i``` - prints an integer
 
-```%d``` - prints a 
+```%d``` - prints a digit
 
 ```%u``` - prints an unsigned integer
 
