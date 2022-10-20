@@ -23,6 +23,7 @@ int _printf(const char *format, ...)
 		else
 		{
 			ret = print_string(&i, ptr, format, &count);
+			ret = print_char(&i, ptr, format, &count);
 			ret = print_digits(&i, ptr, format, &count);
 			ret = print_percent(&i, format, &count);
 			ret = print_unsigned_digits(&i, ptr, format, &count);
@@ -37,6 +38,7 @@ int _printf(const char *format, ...)
 			if (ret == -1)
 				return (-1);
 		}
+
 		i++;
 	}
 	return (count);

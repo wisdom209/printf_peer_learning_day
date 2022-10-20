@@ -11,6 +11,7 @@
 int _printf(const char *format, ...);
 int _putchar(char c);
 int print_string(int *i, va_list ptr, const char *format, int *count);
+int print_char(int *i, va_list ptr, const char *format, int *count);
 int print_rev(int *i, va_list ptr, const char *format, int *count);
 int print_Rot13(int *i, va_list ptr, const char *format, int *count);
 int print_digits(int *i, va_list ptr, const char *format, int *count);
@@ -22,5 +23,6 @@ int print_hex(int *i, va_list ptr, const char *format, int *count);
 int print_ptr(int *i, va_list ptr, const char *format, int *count);
 int print_num(int num, int *count);
 int print_percent(int *i, const char *format, int *count);
-int convert_decimal(unsigned long int num, int base, int flag, int *count, int isPtr);
+int convert_decimal(unsigned long int num, int base, int flag,
+					int *count, int isPtr);
 #endif

@@ -86,6 +86,7 @@ int print_hex(int *i, va_list ptr, const char *format, int *count)
 		convert_decimal(num, 16, 1, count, 0);
 
 		*i = *i + 1;
+		return (0);
 	}
 
 	if (format[*i + 1] == 'x')
@@ -95,6 +96,7 @@ int print_hex(int *i, va_list ptr, const char *format, int *count)
 		convert_decimal(num, 16, 0, count, 0);
 
 		*i = *i + 1;
+		return (0);
 	}
 	return (0);
 }
