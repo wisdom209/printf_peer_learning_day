@@ -101,7 +101,7 @@ va_arg (man 3 va_arg)
 
 ```%c``` - prints a character
 
-```%c``` - prints a percent character
+```%%``` - prints a percent character
 
 ```%i``` - prints an integer
 
