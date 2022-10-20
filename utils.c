@@ -95,6 +95,9 @@ int print_num(long num, int *count)
 	m = num;
 	ptr = malloc(sizeof(int) * i);
 
+	if (ptr == NULL)
+		return (-1);
+
 	for (j = 0; j < i; j++)
 	{
 		ptr[j] = m % 10;
