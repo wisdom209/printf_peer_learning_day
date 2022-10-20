@@ -1,6 +1,6 @@
 # Group Project - printf from scratch (Peer Learning Day) 19th Oct 2022
 
-## Author - Ononiwu Wisdom.
+## Author - Ononiwu Wisdom
 
 A project to make our own printf function, as a fufillment of part of the requirements of the Full Stack Software Engineering programme, offered by African Leadership Xcellerator (ALX), an arm of the African Leadership Group (ALG) which recently acquired the Holberton School of coding.
 
