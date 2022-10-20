@@ -72,10 +72,11 @@ int convert_decimal(unsigned long int num, int base, int flag,
  *
  * Return: int
  */
-int print_num(int num, int *count)
+int print_num(long num, int *count)
 {
 	int *ptr;
-	int m = 0, i = 0, j = 0;
+	int i = 0, j = 0;
+	long m = 0;
 
 	if (num < 0)
 	{

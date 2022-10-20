@@ -37,13 +37,9 @@ int print_unsigned_digits(int *i, va_list ptr, const char *format, int *count)
 {
 	if (format[*i + 1] == 'u')
 	{
-		int num = va_arg(ptr, int);
+		unsigned int num = va_arg(ptr, unsigned int);
 
-		if (num < 0)
-			return (-1);
-
-		if (num <= INT_MAX && num >= INT_MIN)
-			print_num(num, count);
+		print_num(num, count);
 
 		*i = *i + 1;
 	}
